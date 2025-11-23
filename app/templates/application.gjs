@@ -1,12 +1,14 @@
-import { pageTitle } from 'ember-page-title';
-import { WelcomePage } from 'ember-welcome-page';
+const CODE = `<template>
+  Hi. <span>hello</span>
+</template>`;
+
+import { REPL } from 'limber-ui';
 
 <template>
-  {{pageTitle "EmberEmbeddedReplDemo"}}
+  <REPL
+    @code={{CODE}}
+    @editorLoad="force"
+    @lines={{20}}
+    {{! ...options }} />
 
-  {{outlet}}
-
-  {{! The following component displays Ember's default welcome message. }}
-  <WelcomePage />
-  {{! Feel free to remove this! }}
 </template>
