@@ -1,7 +1,8 @@
 # ember-embedded-repl-demo
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+1. start up the app
+1. visit `/`
+1. look at `application.gjs`
 
 ## Prerequisites
 
